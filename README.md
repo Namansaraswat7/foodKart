@@ -1,6 +1,7 @@
 # foodKart
 
 **Problem Statement**
+
 We need to implement a simplified food order management system, named FoodKart. It was a 120-minute round, with 30 minutes for problem briefing and 90 minutes for implementation.
 The problem involved designing a system that simulates food ordering from restaurants with in-memory data structures. The challenge tested object-oriented design, modularity, clean coding, and extensibility. No UI or database, just plain backend logic.
 
@@ -24,6 +25,7 @@ Menu after updates
 Order status and assigned restaurant
 
 **Dispatch confirmations**
+
 5, place-order, order2, item1, item2, item3
 
 2, update-price, restaurant3, item1, 50
