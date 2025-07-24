@@ -36,7 +36,7 @@ Order status and assigned restaurant
 
 3, place-order, order1, item1
 
-**Implementation ** 
+Implementation  
 Entities ->
 
 Restaurant
@@ -59,6 +59,7 @@ Order
 - Item Count
 - Total Price
 - OrderStatus
+- Map<MenuItem, Count>
 
 OrderStatus
 ACCEPTED
@@ -77,10 +78,12 @@ RestaurantStrategy
 
 LowestPriceStrategy 
 NearestLocationStrategy
+ProcessingCapacity()
 
 OrderService
 - PlaceOrder()
 - showDispacthedOrders()
+
 
 
 UML diagram
