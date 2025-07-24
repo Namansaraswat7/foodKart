@@ -22,7 +22,7 @@ public class Restaurant {
         this.address = address;
         this.processingCapacity = processingCapacity;
         this.menuItems = new HashMap<>();
-        this.ordersCompleted = new ArrayList<>();// Initialize the menu items map
+        this.ordersCompleted = new ArrayList<>();
     }
     public void addMenuItem(MenuItem item) {
         menuItems.put(item.getName(), item);
@@ -39,14 +39,8 @@ public class Restaurant {
     public int getId() {
         return id;
     }
-    public void setId(int id) {
-        this.id = id;
-    }
     public String getName() {
         return name;
-    }
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getProcessingCapacity() {
