@@ -11,4 +11,6 @@ public interface RestaurantService {
     boolean updateProcessingCapacity(int restaurantId, int newCapacity);
 
     List<Restaurant> getAllRestaurants();
+
+    Restaurant getRestaurant(int restaurantId);
 }

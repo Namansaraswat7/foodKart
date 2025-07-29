@@ -79,6 +79,13 @@ public class OrderServiceImpl implements OrderService {
         }
         // Update the order status to DISPATCHED
         order.setStatus(OrderStatus.DISPATCHED);
+        int processingCapacityConsumed =  order.getItemsList().entrySet().stream().mapToInt(entry-> entry.getValue()).sum();
+        int restaurantId = order.getRestaurantId();
+        Restaurant restaurant = restaurantService.getRestaurant(restaurantId);
+        System.out.println(restaurant.getProcessingCapacity());
+        System.out.println(processingCapacityConsumed);
+
+        restaurantService.updateProcessingCapacity(restaurantId,restaurant.getProcessingCapacity() + processingCapacityConsumed);
         // Add the dispatched order to the list
         dispatchedOrders.add(order);
         // Return the updated order

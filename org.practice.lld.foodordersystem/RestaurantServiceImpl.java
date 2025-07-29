@@ -68,4 +68,15 @@ public class RestaurantServiceImpl implements RestaurantService{
         }
         return restaurantMap.values().stream().toList();
     }
+
+    @Override
+    public Restaurant getRestaurant(int restaurantId) {
+        if (restaurantMap.isEmpty()) {
+            return null; // No restaurants available
+        }
+
+        Restaurant restaurant = restaurantMap.get(restaurantId);
+
+        return restaurant;
+    }
 }
